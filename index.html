@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="/assets/css/index.less" />
+    <script src="/assets/js/less.js" type="text/javascript"></script>
+    <script src="/assets/js/index.js"></script>
+    <title>AIBooru.zip</title>
+
+</head>
+<body>
+    <div id="preloader">
+      <div id="pr-content">
+        <img src="/assets/img/icon.png" alt="why is this logo red??">
+        <h1>AIBooru.zip</h1>
+      </div>
+    </div>
+    <div id="modal-0" class="modal_back" style="  display: none; opacity: 0;">
+      <div class="modal">
+        <div class="head">
+          <h2>Masonry posts layout CSS</h2>
+          <a onclick="toggleModal('0');"href="javascript://" title="Close the window" class="close_modal" >✖</a>
+        </div>
+        <div class="body">
+          <p>Add this to <m>Custom CSS style</m> in the advanced settings.</p>
+          <br>
+          <div class="code">
+            <div class="head">
+              <span class="lang">CSS</span>
+              <a onclick="copyToClipboard('css-0');" href="javascript://" title="Copy to clipboard" class="copy"></a>
+            </div>
+            <span class="code" id="css-0">@import url('https://tamper.aibooru.zip/preview_images.css?v=1');</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro-main">
+        <div class="intro" >
+          <div class="text intro">
+            <div class='title intro'><h1>AIBooru.zip</h1></div>
+            <p>Userscripts for <a href="https://aibooru.online/" style="color: inherit" target="_blank">AiBooru</a>.</p>
+            <div class="links">
+              <a href="https://tamper.aibooru.zip/aiboorutaghelper.user.js">
+                <h3>Tag helper</h3>
+                <span>Show the full metadata and suggest tags based on it</span>
+              </a>
+              <a href="https://tamper.aibooru.zip/import_wiki_from_danbooru.user.js">
+                <h3>Import Danbooru Wiki</h3>
+                <span>Import wiki pages from Danbooru</span>
+              </a>
+              <!-- <a href="https://tamper.aibooru.zip/mark_seen_posts.user.js">
+                <h3>Mark seen posts</h3>
+                <span>Keeps track of visited posts</span>
+              </a> -->
+              <a onclick="toggleModal('0')" href="javascript://">
+                <h3>Masonry posts layout CSS</h3>
+                <span>Show posts as tiles instead of a grid</span>
+              </a>
+            </div>
+          </div>
+          <Filters />
+        </div>
+        <a href="https://aibooru.online" alt="This post on aibooru" id="postlink" target="_blank">post #000000</a>
+        <div class="introImg" id="introImg">
+        <script>setIntroBackground();</script>
+        </div>
+      </div>
+</body>
+</html>
